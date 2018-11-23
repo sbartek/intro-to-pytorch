@@ -1,12 +1,24 @@
 # Notebooks for learing deep learing with pytorch and fashion
 
 
-## Neural network with fully connected layers
+## Notebook1_BasicPytorch.ipynb       
 
-Train FASHION-MNIST dataset using neural network with fully connected layers: `fc_fashion_mnist.ipynb`.
+Basic pytorch operation + how autograd works
 
-## Convolutional Neural network
+##  Notebook2_SimpleModels.ipynb  
 
-What are convolutional and maxpooling layers: `convolution-and-pool-layer.ipynb`
+Linear Regression model and Logistic regression model
 
-Train FASHION-MNIST dataset using neural network with fully convolutional and maxpooling layers: `cnn_fashion_mnist.ipynb`
+## Notebook3_FullyConnectedLayers.ipynb
+
+Model with fully connected linear layers with Fashon MNIST dataset
+
+
+##  Notebook4_ConvolutionAndPoolLayers.ipynb data
+
+What are convolutional and pooling layers
+
+##  Notebook5_ CNNwithFashionMNIST.ipynb    
+ 
+CNN live
+
