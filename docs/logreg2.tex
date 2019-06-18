@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{matrix,chains,positioning,decorations.pathreplacing,arrows}
+\pagenumbering{gobble}
+
+\usepackage[paperheight=3.4in,paperwidth=7.5in]{geometry}
+
+\begin{document}
+
+
+
+\begin{tikzpicture}[
+plain/.style={
+  draw=none,
+  fill=none,
+  },
+net/.style={
+  matrix of nodes,
+  nodes={
+    draw,
+    circle,
+    inner sep=10pt
+    },
+  nodes in empty cells,
+  column sep=2cm,
+  row sep=-9pt
+  },
+  >=latex
+]
+\matrix[net] (mat)
+{
+  |[plain]| \parbox{1cm}{\centering Input layer} &
+  |[plain]| \parbox{1cm}{\centering Output layer} \\
+  & |[plain]| \\
+  |[plain]| & |[plain]| \\
+  &  \\
+  |[plain]| & |[plain]|  \\
+  & |[plain]| \\
+};
+\foreach \ai [count=\mi ]in {2, 4, 6}
+  \draw[<-] (mat-\ai-1) -- node[above] {$x_\mi$} +(-2cm,0);
+\foreach \ai in {2, 4, 6}
+\draw[->] (mat-\ai-1) -- (mat-4-2);
+\draw[->] (mat-4-2) -- node (a) {} +(2cm,0);
+\node [right=of a, label=above:Output] {$y = f(w_1 x_1 + w_2 x_2 + w_3 x_3 + b)$};
+\end{tikzpicture}
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+

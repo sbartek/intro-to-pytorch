@@ -1,2 +1,4 @@
 **/.ipynb_checkpoints/*
 data/fashion_pt/*
+.DS_Store
+data/jigsaw-toxic-comment-classification-challenge/*
