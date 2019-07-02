@@ -68,8 +68,6 @@ class FashionMnistLoader:
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 
-transform = transforms.Compose(
-    [transforms.ToPILImage(), transforms.ToTensor(), transforms.Normalize([0], [1])])
 
 class FashionMnist(Dataset):
     
