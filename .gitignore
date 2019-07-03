@@ -4,3 +4,4 @@ data/fashion/*
 data/fashion_dataset_pt/*
 .DS_Store
 data/jigsaw-toxic-comment-classification-challenge/*
+**/__pycache__/*
